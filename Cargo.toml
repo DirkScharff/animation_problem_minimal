@@ -1,0 +1,14 @@
+[package]
+name = "animation_problem_minimal"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+bevy = "0.13.2"
+bevy_ecs_ldtk = {git = "https://github.com/Trouv/bevy_ecs_ldtk.git", branch = "main"}
+bevy_ecs_tilemap = {git = "https://github.com/StarArawn/bevy_ecs_tilemap.git", branch = "main"} 
+bevy-inspector-egui = "0.24.0"
+
+[patch.crates-io]
+# Patch unstable version to resolve conflicting dependencies from bevy_ecs_ldtk
+bevy_ecs_tilemap = { git = "https://github.com/StarArawn/bevy_ecs_tilemap" }

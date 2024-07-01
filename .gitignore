@@ -1,0 +1,12 @@
+# Rust generated files
+**/*.rs.bk
+
+# Cargo.lock file
+Cargo.lock
+
+# Build output directory
+/target
+
+# IDE files
+.idea/
+.vscode/
